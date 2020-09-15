@@ -9,17 +9,100 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">62</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">10,617</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.actitime.testscript.CreateCustomer</td><td><a href="#m0">openBrowser</a></td><td rowspan="1">1600085480910</td><td rowspan="1">16</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">com.actitime.testscript.CreateCustomer</td><td><a href="#m1">closeBrowser</a></td><td rowspan="1">1600085480972</td><td rowspan="1">-1600085480972</td></tr><tr class="skippedeven"><td><a href="#m2">login</a></td><td rowspan="1">1600085480957</td><td rowspan="1">-1600085480957</td></tr><tr class="skippedeven"><td><a href="#m3">logout</a></td><td rowspan="1">1600085480972</td><td rowspan="1">-1600085480972</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.actitime.testscript.CreateCustomer</td><td><a href="#m4">testCreateCustomer</a></td><td rowspan="1">1600085480957</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.actitime.testscript.CreateCustomer</td><td><a href="#m0">openBrowser</a></td><td rowspan="1">1600163979228</td><td rowspan="1">10475</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">com.actitime.testscript.CreateCustomer</td><td><a href="#m1">closeBrowser</a></td><td rowspan="1">1600163989827</td><td rowspan="1">-1600163989827</td></tr><tr class="skippedeven"><td><a href="#m2">login</a></td><td rowspan="1">1600163989759</td><td rowspan="1">-1600163989759</td></tr><tr class="skippedeven"><td><a href="#m3">logout</a></td><td rowspan="1">1600163989772</td><td rowspan="1">-1600163989772</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.actitime.testscript.CreateCustomer</td><td><a href="#m4">testCreateCustomer</a></td><td rowspan="1">1600163989761</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.actitime.testscript.CreateCustomer#openBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: .\data\commondata.property (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at com.actitime.generics.FileLib.getPropertyValue(FileLib.java:25)
-	at com.actitime.generics.BaseClass.openBrowser(BaseClass.java:25)
+<h2>Default test</h2><h3 id="m0">com.actitime.testscript.CreateCustomer#openBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=85.0.4183.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EHCAT36&apos;, ip: &apos;192.168.43.228&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00DFD383+3134339]
+	Ordinal0 [0x00CEA171+2007409]
+	Ordinal0 [0x00B8AEE8+569064]
+	Ordinal0 [0x00B7FCDD+523485]
+	Ordinal0 [0x00B7F9E9+522729]
+	Ordinal0 [0x00B7F0FA+520442]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B87551+554321]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B858DE+547038]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B83BF6+539638]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B82F37+536375]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B7AB7C+502652]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7DF81+515969]
+	Ordinal0 [0x00B8BF70+573296]
+	Ordinal0 [0x00B31916+203030]
+	Ordinal0 [0x00B30C1D+199709]
+	Ordinal0 [0x00B2EB0B+191243]
+	Ordinal0 [0x00B12E77+77431]
+	Ordinal0 [0x00B13E3E+81470]
+	Ordinal0 [0x00B13DC9+81353]
+	Ordinal0 [0x00D00CD9+2100441]
+	GetHandleVerifier [0x00F6B75A+1396954]
+	GetHandleVerifier [0x00F6B3D9+1396057]
+	GetHandleVerifier [0x00F77126+1444518]
+	GetHandleVerifier [0x00F6BCE8+1398376]
+	Ordinal0 [0x00CF7F51+2064209]
+	Ordinal0 [0x00D022EB+2106091]
+	Ordinal0 [0x00D02411+2106385]
+	Ordinal0 [0x00D149C4+2181572]
+	BaseThreadInitThunk [0x7698F989+25]
+	RtlGetAppContainerNamedObjectPath [0x77DC7084+228]
+	RtlGetAppContainerNamedObjectPath [0x77DC7054+180]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.actitime.generics.BaseClass.openBrowser(BaseClass.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -48,13 +131,96 @@
 <h3 id="m1">com.actitime.testscript.CreateCustomer#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.actitime.testscript.CreateCustomer#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">com.actitime.testscript.CreateCustomer#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.actitime.testscript.CreateCustomer#testCreateCustomer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: .\data\commondata.property (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at com.actitime.generics.FileLib.getPropertyValue(FileLib.java:25)
-	at com.actitime.generics.BaseClass.openBrowser(BaseClass.java:25)
+<h3 id="m4">com.actitime.testscript.CreateCustomer#testCreateCustomer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=85.0.4183.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EHCAT36&apos;, ip: &apos;192.168.43.228&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00DFD383+3134339]
+	Ordinal0 [0x00CEA171+2007409]
+	Ordinal0 [0x00B8AEE8+569064]
+	Ordinal0 [0x00B7FCDD+523485]
+	Ordinal0 [0x00B7F9E9+522729]
+	Ordinal0 [0x00B7F0FA+520442]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B87551+554321]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B858DE+547038]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B83BF6+539638]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B82F37+536375]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B7AB7C+502652]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7DF81+515969]
+	Ordinal0 [0x00B8BF70+573296]
+	Ordinal0 [0x00B31916+203030]
+	Ordinal0 [0x00B30C1D+199709]
+	Ordinal0 [0x00B2EB0B+191243]
+	Ordinal0 [0x00B12E77+77431]
+	Ordinal0 [0x00B13E3E+81470]
+	Ordinal0 [0x00B13DC9+81353]
+	Ordinal0 [0x00D00CD9+2100441]
+	GetHandleVerifier [0x00F6B75A+1396954]
+	GetHandleVerifier [0x00F6B3D9+1396057]
+	GetHandleVerifier [0x00F77126+1444518]
+	GetHandleVerifier [0x00F6BCE8+1398376]
+	Ordinal0 [0x00CF7F51+2064209]
+	Ordinal0 [0x00D022EB+2106091]
+	Ordinal0 [0x00D02411+2106385]
+	Ordinal0 [0x00D149C4+2181572]
+	BaseThreadInitThunk [0x7698F989+25]
+	RtlGetAppContainerNamedObjectPath [0x77DC7084+228]
+	RtlGetAppContainerNamedObjectPath [0x77DC7054+180]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.actitime.generics.BaseClass.openBrowser(BaseClass.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

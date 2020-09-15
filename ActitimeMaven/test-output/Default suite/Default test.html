@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 14 17:41:20 IST 2020</td>
+<td>Started on:</td><td>Tue Sep 15 15:29:39 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (62 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10617 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,96 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.actitime.testscript.CreateCustomer.openBrowser()'><b>openBrowser</b><br>Test class: com.actitime.testscript.CreateCustomer</td>
-<td><div><pre>java.io.FileNotFoundException: .\data\commondata.property (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at com.actitime.generics.FileLib.getPropertyValue(FileLib.java:25)
-	at com.actitime.generics.BaseClass.openBrowser(BaseClass.java:25)
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=85.0.4183.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EHCAT36&apos;, ip: &apos;192.168.43.228&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00DFD383+3134339]
+	Ordinal0 [0x00CEA171+2007409]
+	Ordinal0 [0x00B8AEE8+569064]
+	Ordinal0 [0x00B7FCDD+523485]
+	Ordinal0 [0x00B7F9E9+522729]
+	Ordinal0 [0x00B7F0FA+520442]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B87551+554321]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B858DE+547038]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B83BF6+539638]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B82F37+536375]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B7AB7C+502652]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7DF81+515969]
+	Ordinal0 [0x00B8BF70+573296]
+	Ordinal0 [0x00B31916+203030]
+	Ordinal0 [0x00B30C1D+199709]
+	Ordinal0 [0x00B2EB0B+191243]
+	Ordinal0 [0x00B12E77+77431]
+	Ordinal0 [0x00B13E3E+81470]
+	Ordinal0 [0x00B13DC9+81353]
+	Ordinal0 [0x00D00CD9+2100441]
+	GetHandleVerifier [0x00F6B75A+1396954]
+	GetHandleVerifier [0x00F6B3D9+1396057]
+	GetHandleVerifier [0x00F77126+1444518]
+	GetHandleVerifier [0x00F6BCE8+1398376]
+	Ordinal0 [0x00CF7F51+2064209]
+	Ordinal0 [0x00D022EB+2106091]
+	Ordinal0 [0x00D02411+2106385]
+	Ordinal0 [0x00D149C4+2181572]
+	BaseThreadInitThunk [0x7698F989+25]
+	RtlGetAppContainerNamedObjectPath [0x77DC7084+228]
+	RtlGetAppContainerNamedObjectPath [0x77DC7054+180]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.actitime.generics.BaseClass.openBrowser(BaseClass.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,14 +190,97 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1725165248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1725165248'><pre>java.io.FileNotFoundException: .\data\commondata.property (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at com.actitime.generics.FileLib.getPropertyValue(FileLib.java:25)
-	at com.actitime.generics.BaseClass.openBrowser(BaseClass.java:25)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1256405521", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1256405521'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=85.0.4183.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EHCAT36&apos;, ip: &apos;192.168.43.228&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00DFD383+3134339]
+	Ordinal0 [0x00CEA171+2007409]
+	Ordinal0 [0x00B8AEE8+569064]
+	Ordinal0 [0x00B7FCDD+523485]
+	Ordinal0 [0x00B7F9E9+522729]
+	Ordinal0 [0x00B7F0FA+520442]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B87551+554321]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B858DE+547038]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B83BF6+539638]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B82F37+536375]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B7AB7C+502652]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7DF81+515969]
+	Ordinal0 [0x00B8BF70+573296]
+	Ordinal0 [0x00B31916+203030]
+	Ordinal0 [0x00B30C1D+199709]
+	Ordinal0 [0x00B2EB0B+191243]
+	Ordinal0 [0x00B12E77+77431]
+	Ordinal0 [0x00B13E3E+81470]
+	Ordinal0 [0x00B13DC9+81353]
+	Ordinal0 [0x00D00CD9+2100441]
+	GetHandleVerifier [0x00F6B75A+1396954]
+	GetHandleVerifier [0x00F6B3D9+1396057]
+	GetHandleVerifier [0x00F77126+1444518]
+	GetHandleVerifier [0x00F6BCE8+1398376]
+	Ordinal0 [0x00CF7F51+2064209]
+	Ordinal0 [0x00D022EB+2106091]
+	Ordinal0 [0x00D02411+2106385]
+	Ordinal0 [0x00D149C4+2181572]
+	BaseThreadInitThunk [0x7698F989+25]
+	RtlGetAppContainerNamedObjectPath [0x77DC7084+228]
+	RtlGetAppContainerNamedObjectPath [0x77DC7054+180]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.actitime.generics.BaseClass.openBrowser(BaseClass.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -140,8 +306,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.actitime.testscript.CreateCustomer@6b8ca3c8</td></tr>
+<td>10</td>
+<td>com.actitime.testscript.CreateCustomer@3a6bb9bf</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -153,18 +319,18 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.actitime.testscript.CreateCustomer.login()'><b>login</b><br>Test class: com.actitime.testscript.CreateCustomer</td>
 <td></td>
-<td>-1600085480</td>
-<td>com.actitime.testscript.CreateCustomer@6b8ca3c8</td></tr>
+<td>-1600163989</td>
+<td>com.actitime.testscript.CreateCustomer@3a6bb9bf</td></tr>
 <tr>
 <td title='com.actitime.testscript.CreateCustomer.logout()'><b>logout</b><br>Test class: com.actitime.testscript.CreateCustomer</td>
 <td></td>
-<td>-1600085480</td>
-<td>com.actitime.testscript.CreateCustomer@6b8ca3c8</td></tr>
+<td>-1600163989</td>
+<td>com.actitime.testscript.CreateCustomer@3a6bb9bf</td></tr>
 <tr>
 <td title='com.actitime.testscript.CreateCustomer.closeBrowser()'><b>closeBrowser</b><br>Test class: com.actitime.testscript.CreateCustomer</td>
 <td></td>
-<td>-1600085480</td>
-<td>com.actitime.testscript.CreateCustomer@6b8ca3c8</td></tr>
+<td>-1600163989</td>
+<td>com.actitime.testscript.CreateCustomer@3a6bb9bf</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -175,13 +341,96 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.actitime.testscript.CreateCustomer.testCreateCustomer()'><b>testCreateCustomer</b><br>Test class: com.actitime.testscript.CreateCustomer</td>
-<td><div><pre>java.io.FileNotFoundException: .\data\commondata.property (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at com.actitime.generics.FileLib.getPropertyValue(FileLib.java:25)
-	at com.actitime.generics.BaseClass.openBrowser(BaseClass.java:25)
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=85.0.4183.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EHCAT36&apos;, ip: &apos;192.168.43.228&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00DFD383+3134339]
+	Ordinal0 [0x00CEA171+2007409]
+	Ordinal0 [0x00B8AEE8+569064]
+	Ordinal0 [0x00B7FCDD+523485]
+	Ordinal0 [0x00B7F9E9+522729]
+	Ordinal0 [0x00B7F0FA+520442]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B87551+554321]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B858DE+547038]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B83BF6+539638]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B82F37+536375]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B7AB7C+502652]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7DF81+515969]
+	Ordinal0 [0x00B8BF70+573296]
+	Ordinal0 [0x00B31916+203030]
+	Ordinal0 [0x00B30C1D+199709]
+	Ordinal0 [0x00B2EB0B+191243]
+	Ordinal0 [0x00B12E77+77431]
+	Ordinal0 [0x00B13E3E+81470]
+	Ordinal0 [0x00B13DC9+81353]
+	Ordinal0 [0x00D00CD9+2100441]
+	GetHandleVerifier [0x00F6B75A+1396954]
+	GetHandleVerifier [0x00F6B3D9+1396057]
+	GetHandleVerifier [0x00F77126+1444518]
+	GetHandleVerifier [0x00F6BCE8+1398376]
+	Ordinal0 [0x00CF7F51+2064209]
+	Ordinal0 [0x00D022EB+2106091]
+	Ordinal0 [0x00D02411+2106385]
+	Ordinal0 [0x00D149C4+2181572]
+	BaseThreadInitThunk [0x7698F989+25]
+	RtlGetAppContainerNamedObjectPath [0x77DC7084+228]
+	RtlGetAppContainerNamedObjectPath [0x77DC7054+180]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.actitime.generics.BaseClass.openBrowser(BaseClass.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -206,14 +455,97 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace303240439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace303240439'><pre>java.io.FileNotFoundException: .\data\commondata.property (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at com.actitime.generics.FileLib.getPropertyValue(FileLib.java:25)
-	at com.actitime.generics.BaseClass.openBrowser(BaseClass.java:25)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1267042315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1267042315'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=85.0.4183.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EHCAT36&apos;, ip: &apos;192.168.43.228&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00DFD383+3134339]
+	Ordinal0 [0x00CEA171+2007409]
+	Ordinal0 [0x00B8AEE8+569064]
+	Ordinal0 [0x00B7FCDD+523485]
+	Ordinal0 [0x00B7F9E9+522729]
+	Ordinal0 [0x00B7F0FA+520442]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B87551+554321]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B858DE+547038]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B83BF6+539638]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B82F37+536375]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7EF25+519973]
+	Ordinal0 [0x00B7E542+517442]
+	Ordinal0 [0x00B7E935+518453]
+	Ordinal0 [0x00B7E265+516709]
+	Ordinal0 [0x00B7AB7C+502652]
+	Ordinal0 [0x00B7E214+516628]
+	Ordinal0 [0x00B7DF81+515969]
+	Ordinal0 [0x00B8BF70+573296]
+	Ordinal0 [0x00B31916+203030]
+	Ordinal0 [0x00B30C1D+199709]
+	Ordinal0 [0x00B2EB0B+191243]
+	Ordinal0 [0x00B12E77+77431]
+	Ordinal0 [0x00B13E3E+81470]
+	Ordinal0 [0x00B13DC9+81353]
+	Ordinal0 [0x00D00CD9+2100441]
+	GetHandleVerifier [0x00F6B75A+1396954]
+	GetHandleVerifier [0x00F6B3D9+1396057]
+	GetHandleVerifier [0x00F77126+1444518]
+	GetHandleVerifier [0x00F6BCE8+1398376]
+	Ordinal0 [0x00CF7F51+2064209]
+	Ordinal0 [0x00D022EB+2106091]
+	Ordinal0 [0x00D02411+2106385]
+	Ordinal0 [0x00D149C4+2181572]
+	BaseThreadInitThunk [0x7698F989+25]
+	RtlGetAppContainerNamedObjectPath [0x77DC7084+228]
+	RtlGetAppContainerNamedObjectPath [0x77DC7054+180]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.actitime.generics.BaseClass.openBrowser(BaseClass.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -240,7 +572,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.actitime.testscript.CreateCustomer@6b8ca3c8</td></tr>
+<td>com.actitime.testscript.CreateCustomer@3a6bb9bf</td></tr>
 </table><p>
 </body>
 </html>
