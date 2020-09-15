@@ -22,7 +22,7 @@ public class CreateCustomer extends BaseClass {
 		TaskListPage t = new TaskListPage(driver);
 		t.getAddNewBtn().click();
 		t.getNewCustomerBtn().click();
-		t.getEnterCustomerNameTbx().sendKeys("hiiiiii");
+		t.getEnterCustomerNameTbx().sendKeys(customerName);
 		t.getEnterCustomerDescriptionTbx().sendKeys(customerDesc);
 		t.getProjectDropDown().click();
 		t.getOurCompanyOption().click();

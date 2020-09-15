@@ -16,7 +16,7 @@ public class BaseClass {
 	static {
 		System.setProperty("webdriver.chrome.driver", "./src/main/resources/driver/chromedriver.exe");
 		}
-	public WebDriver driver;
+	public static WebDriver driver;
 	public FileLib f = new FileLib();
 	public WebDriverCommonLib wcl = new WebDriverCommonLib();
 	
