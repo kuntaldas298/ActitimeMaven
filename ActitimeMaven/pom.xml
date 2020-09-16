@@ -5,12 +5,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
   <groupId>ActitimeMaven</groupId>
   <artifactId>ActitimeMaven</artifactId>
   <version>1.0-SNAPSHOT</version>
-  
-    <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
-
   <dependencies>
   
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
