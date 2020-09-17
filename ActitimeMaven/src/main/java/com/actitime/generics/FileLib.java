@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
@@ -36,8 +37,9 @@ public String getPropertyValue(String key) throws IOException {
  * @return
  * @throws EncryptedDocumentException
  * @throws IOException
+ * @throws InvalidFormatException 
  */
-public String getExcelValue(String sheetname,int row, int cell) throws EncryptedDocumentException, IOException {
+public String getExcelValue(String sheetname,int row, int cell) throws EncryptedDocumentException, IOException, InvalidFormatException {
 	FileInputStream file = new FileInputStream("./src/test/resources/data/TestScript.xlsx");
 	Workbook wb = WorkbookFactory.create(file);
 	String value = wb.getSheet(sheetname).getRow(row).getCell(cell).getStringCellValue();
@@ -51,8 +53,9 @@ public String getExcelValue(String sheetname,int row, int cell) throws Encrypted
  * @param value
  * @throws EncryptedDocumentException
  * @throws IOException
+ * @throws InvalidFormatException 
  */
-public void setExcelValue(String sheetname,int row, int cell, String value) throws EncryptedDocumentException, IOException {
+public void setExcelValue(String sheetname,int row, int cell, String value) throws EncryptedDocumentException, IOException, InvalidFormatException {
 	FileInputStream file = new FileInputStream("./src/test/resources/data/TestScript.xlsx");
 	Workbook wb = WorkbookFactory.create(file);
 	wb.getSheet(sheetname).getRow(row).getCell(cell).setCellValue(value);

@@ -3,6 +3,7 @@ package com.actitime.testscript;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -14,7 +15,7 @@ import com.actitime.pom.TaskListPage;
 @Listeners (com.actitime.generics.ListenerImplementation.class) 
 public class CreateCustomer extends BaseClass {
 	@Test
-	public void testCreateCustomer() throws EncryptedDocumentException, IOException, InterruptedException {
+	public void testCreateCustomer() throws EncryptedDocumentException, IOException, InterruptedException, InvalidFormatException {
 		String customerName = f.getExcelValue("createCustomer", 1, 0);
 		String customerDesc = f.getExcelValue("createCustomer", 1, 1);
 		Homepage home = new Homepage(driver);
